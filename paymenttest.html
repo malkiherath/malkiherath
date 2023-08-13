@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details page</title>
+    <link rel="stylesheet" href="./detailstest.css">
+    
+</head>
+<body>
+    <div class="cover">
+        <h1>buy tickets</h1>
+    </div>
+    
+<div class="inline">
+    <h2>pay</h2>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>enter your details</h1>
+            <div class="input-control">
+                <label for="card">card number</label>
+                <input id="card" name="card" type="text" >
+                <div class="error" ></div>
+            </div>
+            
+            <div class="input-control">
+                <label for="edate">expiry date</label>
+                <input id="edate"name="edate" type="date">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="cvc">CVC/CVV</label>
+                <input id="cvc" name="cvc" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="cardname">Name on card</label>
+                <input id="cardname" name="cardname" type="text">
+                <div class="error"></div>
+            </div>
+            
+            <button type="reset" id="clearbtn">clear</button>
+            <button type="submit" id="btn" onclick="errors()">submit</button>
+        </form>
+        
+    </div>
+    <div class="section">
+          
+        <!-- tickets table and total paypal section -->
+        <table id="profileData" border="1">
+            <!-- Display user data here -->
+            <tr>
+                
+                <th>Date</th>
+                <th>Time</th>
+                
+                <th>Duration</th>
+                <th>Guests</th>
+                <th>Number of Tickets</th>
+                <th>Tickets Value</th>
+            </tr>
+            <tbody id="tickets-table">
+                <!-- Dynamically updated rows -->
+            </tbody>
+            
+           </table>
+           <button type="submit" id="purbtn" class="button-enabled" onclick="updateButtonState()"><li type="none"><a href="./confirmtest.html">continue with purchase</a></li></button>
+   
+</div>
+    
+</div>
+
+
+
+
+
+<!---->
+
+
+    <script src="./paymenttest.js"></script>
+</body>
+</html>

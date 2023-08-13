@@ -1,0 +1,583 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-transform: capitalize;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    margin-right: 10%;
+    margin-left: 50%;
+    
+  }
+  
+  table, th, td {
+    
+    padding: 8px;
+    text-align: center;
+  }
+  
+
+  /*/////////*/
+  *{
+    margin: 0%;
+    padding: 0% 0px 0 0px;
+    font-family: Verdana, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+/*responsive*/
+@media(max-width:574px){
+    .footer_col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (min-width: 300px)and (max-width: 1000px){
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+}
+/*header and footer*/
+.nav{
+
+    display:flex;
+    justify-content:left;
+    align-items: center;
+    line-height: 80px;
+   background-color: rgb(13, 13, 13);
+   
+}
+
+header .nav ul  img {
+
+border-radius: 8px;
+margin-top: 10px;
+margin-left: 10px;
+}
+
+.nav ul li{
+  display:contents;
+  font-size:medium;
+  padding-left: 20px;
+ 
+}
+header .nav nav ul  li a{
+    text-decoration-style:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  margin-left: 0px;
+ }
+ header .nav nav ul  li a:hover{
+   
+   color: rgb(72, 255, 0);
+   transition-duration: 0.18s;
+   padding-left: 3px;
+   font-size:17px;
+ }
+
+/*ticket page*/
+.inline{
+  padding-left: 100px;
+  align-items:flex-start;
+}
+p{
+  text-align: justify;
+}
+.cover{
+    width: 100%;
+    
+    background-position: center;
+background-image: url(./img/tickethead.png);
+    
+}
+.cover h1{
+    text-align: center;
+    
+}
+.inline_1{
+  width: 300px;
+  height: 5px;
+  background: rgb(137, 87, 211);
+  margin: 10px auto;
+  animation-name: hh;
+  animation-duration: 5s;
+}
+@keyframes h{
+  0%  {color: rgb(23, 60, 42);}
+  50%   {color:  rgb(87, 211, 112);}
+  100%  {color: rgb(27, 100, 90);}
+}
+@keyframes hh{
+  0%   {background: rgb(188, 100, 195);}
+  50%  {background: rgb(23, 4, 4)}
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding:5%; 
+    font: 3em sans-serif;
+     
+}
+h2{
+    font: 3rem sans-serif;
+    animation-name: h;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1ms;
+}
+h3{
+  font: 1.5rem sans-serif;
+  color: #000;
+}
+fieldset{
+    border: 1px solid rgb(12, 47, 21);
+    color: #263238; 
+}
+
+label{
+  margin-right: 20%;
+}
+#l{
+  margin-right: 0px;
+
+}
+#button{
+    
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    
+}
+
+.col1,.col3{
+    margin:auto 20px auto 20px ;
+    background-color: #666;
+    padding-top: 10px;
+}
+.col2{
+    margin:auto 20px auto 20px;
+    background-color: #666666a2;
+    padding-top: 10px;
+}
+.row1{
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-right: 10%;
+    
+}
+#dates{
+    margin-left: 1%;
+    margin-right: 1%;
+    align-items: flex-start;
+}
+#duration{
+align-content: flex-start;
+}
+#adult_select{
+width: 100px;
+text-align: center;
+}
+#des{
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+.section {
+  display:flex;
+  flex-wrap:wrap;
+  padding-left: 0;
+  margin-left: 0;
+}
+#noleft{
+  padding-left: 0%;
+  margin: 1%;
+}
+.col{
+  width: 50%;
+    
+    padding: 20px;
+    float: left;
+    
+}
+section .col select {
+    padding-left:10px ;
+    padding-right: 10px;
+    font-size: 1rem;  
+    border-radius: 80px;
+    width: 100px;
+    text-align: center;
+}
+select option{
+    text-transform: lowercase;
+}
+
+#duration{
+    margin: 2%;
+    
+}
+.section{
+    display: inline-block;
+}
+
+/*table1*/
+
+#pricetable{
+  
+    color: rgb(23, 35, 25);
+    display: block;
+    border-collapse: collapse;
+    margin-left: 1%;
+    margin-right: 1;
+    background-position: center;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top: 100px;
+}
+#pricetable tr th,td{
+  padding: 10px 10px; 
+    text-align: center;
+    
+}
+
+th,#pricetable #f,#pricetable #s{
+    background-image:linear-gradient(rgba(1, 22, 40, 0.326),rgba(57, 57, 55, 0.379)),url(./img/tickethead.png);
+    width: 10%;
+    padding: 5px;
+}
+
+#pricetable #a{
+    background-color:  rgba(43, 86, 82, 0.593);
+    color: #000;
+}
+#pricetable #c{
+    background-color:  rgb(43, 86, 82);
+    
+}
+
+/*table2*/
+
+#t2,#total,#tt{
+   
+    border: 0px solid  whitesmoke;
+    padding: 0px 0px;
+    font-size: 14px;
+    margin: 10%;
+    
+    text-align: center;
+    background-color: whitesmoke;
+  border-radius: 4px;
+    
+}
+
+
+
+#continue-button{
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 80%;
+    margin: 10%;
+    text-align: center;
+    min-height: 100px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid #ffffff;
+    background-color:#12465fe6 ;  
+    cursor: pointer;
+    position: relative;
+    overflow:hidden;
+    font-size: 16px;
+}
+#continue-button a {
+    color: rgb(214, 245, 165);
+    text-decoration: none;
+}
+#continue-button :hover::span {
+    width: 100%;
+    background-color: #6c6999d6 ;
+}
+#continue-button:hover{
+    color: rgb(251, 251, 251);
+    background-color:   #0d2d3cc8 ;
+    border-color: rgb(255, 255, 255);
+    font-size: 20px;
+    
+}
+#continue-button[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+select{
+    cursor: pointer;
+}
+/*calendar*/
+.cal{
+    margin-right: 15%;
+    margin-bottom: 10px;
+    
+    
+}
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #262a46d5;
+    text-align: center;
+  }
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+  }
+  
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+    
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 10.6%;
+    color: #666;
+    text-align: center;
+    padding-left: 20px;
+    margin-left: 2px;
+  }
+  
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 10.6%;
+    color: #666;
+    text-align: center;
+    padding-left: 20px;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+    cursor: pointer;
+  }
+  .days li:hover{
+    color: white ;
+    background: #1a1829db;
+    padding: 3px;
+  }
+  .days li:hover ::after{
+    margin-left: 9px;
+    padding: 5px;
+    background: #1a1829db;
+    color: white !important
+  }
+  
+  .days  .active {
+    margin-left: 9px;
+    padding: 5px;
+    background: #1a1829db;
+    color: white !important
+    
+  }
+
+  /*details page*/
+.table_purchase{
+  color: #000;  
+    float: right;
+    
+}
+#detailsForm,.table_purchase{
+    margin-left: 10px;
+    
+}
+form label{
+    display:block;
+    
+}
+
+.inline{
+  display: flex;
+background-color: #a2bac6;
+  width: 100%;
+ 
+  
+}
+
+.container{
+  margin: 7%;
+  max-width: 600px;
+}
+/**/
+#form {
+  width: 100%;
+  margin-top: 10%;
+  
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+#form h1 {
+  color: #0f2027;
+  text-align: center;
+}
+
+#form button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: white;
+  background-color: rgb(41, 57, 194);
+  border: none;
+  border-radius: 4px;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input {
+  border: 2px solid #f0f0f0;
+border-radius: 4px;
+display: block;
+font-size: 12px;
+padding: 10px;
+width: 100%;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+/**/
+/* Split the screen in half */
+.split {
+    height:100%;
+    position:absolute;
+    top: 0%;
+    overflow-x: hidden;
+    
+    
+  }
+
+  /* Control the left side */
+  .left {
+    margin-bottom: 10px;
+    left: 0;
+    background-color:#d8e4bc;
+    width: 50%;
+    background-position:center;
+    height: 100%;
+    
+    
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-image: linear-gradient(rgba(1, 22, 40, 0.867),rgba(56, 55, 57, 0.7));
+    width: 50%;
+    
+
+    
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    margin-top: 100px;
+  }
+  #btn{
+    text-decoration: none;
+    color: white;
+}
+
+#summary-table{
+  margin-left: 2%;
+  margin-right: 2%;
+  background-image: linear-gradient(rgba(1, 22, 40, 0.188),rgba(57, 57, 55, 0.379)),url(./img/tickethead.png);
+  width: 100%;
+  background-position: center;
+  border: 1px solid#eee;
+  
+  
+}
+#summary-table th{
+  background-image:linear-gradient(rgba(1, 22, 40, 0.045),rgba(57, 57, 55, 0.216)),url(./img/tickethead.png) ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+#summary-table tfoot{
+  border: #639372 1px solid;
+  background-image:linear-gradient(rgba(1, 22, 40, 0.07),rgba(57, 57, 55, 0.216)),url(./img/tickethead.png) ;
+}

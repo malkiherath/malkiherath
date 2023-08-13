@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details page</title>
+    <link rel="stylesheet" href="./detailstest.css">
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+<script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+</head>
+<body>
+    <div class="cover">
+        <h1>buy tickets</h1>
+    </div>
+    
+<div  id="detailscontain">
+   <div class="inline"> 
+    
+    <div class="container">
+        <h3>enter your details</h3>
+        <form id="form" action="/">
+            
+            <div class="input-control">
+                <label for="fullname">fullname</label>
+                <input id="fullname" name="fullname" type="text">
+                <div class="error"></div>
+            </div>
+            
+            <div class="input-control">
+                <label for="phone">mobile number</label>
+                <input id="phone"name="phone" type="phone">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email2">Confirm Email</label>
+                <input id="email2" name="email2" type="text">
+                <div class="error"></div>
+            </div>
+                <button type="reset" id="clearbtn">clear</button>
+                <button type="submit" id="purbtn" class="button-enabled" onclick="errors()">submit</button>
+        </form>
+        
+        
+    </div>
+    
+    <div class="section">
+          
+        <!-- tickets table and total paypal section -->
+        <table id="profileData" border="1">
+            <!-- Display user data here -->
+            <tr>
+                
+                <th>Date</th>
+                <th>Time</th>
+                
+                <th>Duration</th>
+                <th>Guests</th>
+                <th>Number of Tickets</th>
+                <th>Tickets Value</th>
+            </tr>
+            <tbody id="tickets-table">
+                <!-- Dynamically updated rows -->
+            </tbody>
+            
+           </table>
+           <button type="submit" id="purbtn" class="button-enabled" onclick="updateButtonState()"><li type="none"><a href="./paymenttest.html">continue with purchase</a></li></button>
+   
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<!---->
+<script>
+    var userData = JSON.parse(localStorage.getItem("form"));
+    var profileDataElement = document.getElementById("profileData");
+    
+    if (userData) {
+        profileDataElement.innerHTML +=
+            `<tr>
+                <td rowspan="5">${userData.date}</td>
+                <td rowspan="5">${userData.selectedOptions}</td>
+                <td>${userData.ticketData[0][0]}</td>
+                <td>${userData.ticketData[0][1]}</td>
+                <td rowspan="5">(${userData.total})</td>
+            </tr>
+            <tr>
+                <td>${userData.ticketData[1][0]}</td>
+                <td>${userData.ticketData[1][1]}</td>
+            </tr>
+            <tr>
+                <td>${userData.ticketData[2][0]}</td>
+                <td>${userData.ticketData[2][1]}</td>
+            </tr>
+            <tr>
+                <td>${userData.ticketData[3][0]}</td>
+                <td>${userData.ticketData[3][1]}</td>
+            </tr>
+            <tr>
+                <td>${userData.ticketData[4][0]}</td>
+                <td>${userData.ticketData[4][1]}</td>
+            </tr>`;
+    } else {
+        profileDataElement.innerHTML = "No user data found.";
+    }
+</script>
+
+
+
+    <script src="./detailstest.js"></script>
+</body>
+</html>

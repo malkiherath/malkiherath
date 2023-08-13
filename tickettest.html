@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zip Turtle Hatchery Booking</title>
+  <link rel="stylesheet" href="./tickettest.css">
+</head>
+<body>
+  <div class="split left">
+    <header>
+       
+      <div class="nav">
+      <nav> 
+          <ul>
+              
+              <a href="./index.html"><img src="./img/favicon_package_v0.16 (2)/favicon.ico" alt="logo" class="icon"></a>
+              <li><a href="./home.html" target="_self"> Home ┃</a></li>
+              <li><a href="./turtle.html"target="_blank"><li>Turtlel categories┃ </a></li>
+              <li><a href="./hikkaduwa.html"target="_blank"><li>Hikkaduwa turtle hatchery ┃</a></li>
+              <li><a href="./threats.html"target="_blank"><li>Threats to turtles┃ </a></li>
+              <li><a href="./other.html"target="_blank"><li>Other turtle hatcheries┃ </a></li>
+              <li><a href="./purchase.html"target="_blank"><li>Purchase and  Donate page ┃ </a></li>
+          <a href="./index.html"target="_blank"><li>about us</a></li>
+          </ul>
+  
+      </nav>
+      </div>
+  </header>
+  <div class="cover">
+      <h1>book tickets</h1>
+      <div class="inline_1"></div>
+      </div>
+    <div class="centered">
+  
+  
+  <div class="container">
+    
+    <div class="section">
+      <!--date and guest section-->
+      <fieldset id="noleft">
+      <legend><h2>Dates</h2></legend>
+      <h3>save your dates now!</h3>
+
+      <input type="date" id="selected-date">
+
+      <br><br><br>
+       
+      </fieldset>
+    </div>
+    <div class="section">
+      <fieldset id="noleft">
+      <legend><h2>guests</h2></legend>
+        <div class="col">  
+          <h3>foreign</h3>  
+      <div class="col1">  
+          <label for="foreigner-adult" class="row1">foreigner-adult:</label>
+          <input type="number" id="foreigner-adult" min="0">
+         
+          
+          <p id="des">above 15 years</p>
+      </div>
+      <div class="col2">
+          <label for="foreigner-child" class="row1">foreigner-child:</label>
+          <input type="number" id="foreigner-child" min="0">
+          
+          <p id="des">5 to 14 years</p>
+      </div>
+  <div class="col3">
+      <label for="infant" class="row1">infant</label>
+      <input type="number" id="infant" min="0">
+     
+      <p id="des">under 14 years</p>
+  </div>
+  </div>
+
+  <div class="col">
+      <h3>local</h3>    
+      <div class="col1">  
+          <label for="sl-adult" class="row1">sl-adult:</label>
+          <input type="number" id="sl-adult" min="0">
+          
+          
+          <p id="des">above 15 years</p>
+      </div>
+      <div class="col2">
+          <label for="sl-child" class="row1">sl-child:</label>
+          <input type="number" id="sl-child" min="0">
+         
+          <p id="des">5 to 14 years</p>
+      </div>
+      <div class="col3">
+          <label for="infant" class="row1">infant</label>
+          <input type="number" id="infant" min="0">
+         
+          <p id="des">under 14 years</p>
+      </div>
+      </div>
+      </fieldset>
+      <!--duration and tickets section-->
+      <fieldset id="noleft">
+      <legend><h2>duration</h2></legend>
+      <select id="duration" multiple>
+        <option value="1">07.00 am - 08.00 am</option>
+        <option value="2">07.00 am - 08.00 am</option>
+        <option value="3">08.00 am - 09.00 am</option>
+        <option value="4">10.00 am - 11.00 am(peak)</option>
+        <option value="5">11.00 am - 12.00 pm(peak)</option>
+        <option value="6">12.00 pm - 01.00 pm(peak)</option>
+        <option value="7">01.00 pm - 02.00 pm</option>
+        <option value="8">02.00 pm - 03.00 pm</option>
+        <option value="9">03.00 pm - 04.00 pm(peak)</option>
+        <option value="10">04.00 pm - 05.00 pm(peak)</option>
+        <option value="11">05.00 pm - 06.00 pm(peak)</option>
+  
+      
+      </select>
+      <div id="selectedOptions"></div>
+    </fieldset>
+    </div>
+  </div>
+</div>
+</div>
+    <div class="split right">
+      <div class="centered">
+        <h2>charge per hour</h2>
+        <div class="section">
+            <table id="pricetable">
+                
+                <tr>
+                <th>citizen</th>    
+                <th>guest</th>
+                <th>normal hour</th>
+                <th>peak hour</th>
+                </tr>
+                <tr id="a">
+                    <td id="f" rowspan="2">foreign</td>
+                    <td>adult</td>
+                    <td>10 USD</td>
+                    <td>13 USD</td>
+                </tr>
+                <tr id="c">
+                    
+                    <td>child</td>
+                    <td>5 USD</td>
+                    <td>8 USD</td>
+                </tr>
+    
+                <tr id="a">
+                    <td id="s" rowspan="2">SL</td>
+                    <td>adult</td>
+                    <td>4 USD</td>
+                    <td>6 USD</td>
+                </tr>
+                <tr id="c">
+                    
+                    <td>child</td>
+                    <td>2 USD</td>
+                    <td>3 USD</td>
+                </tr>
+            </table>
+                
+        </div>    
+        
+          <div class="section">
+          
+    <!-- tickets table and total paypal section -->
+    <h2>ticket</h2>
+          <table id="summary-table" >
+              <thead>
+                  <tr>
+                      <th>Guests</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th>Duration</th>
+                      <th>No of Tickets</th>
+                      <th>Tickets Value</th>
+                  </tr>
+              </thead>
+              <tbody id="tickets-table">
+                  <!-- Dynamically updated rows -->
+              </tbody>
+              <tfoot>
+                  <tr>
+                      <td colspan="5">Total Payable:</td>
+                      <td id="total-paypal">$0</td>
+                  </tr>
+              </tfoot>
+          </table>
+          
+          
+      </div>
+      <button type="submit"id="continue-button" onclick="document.location='detailstest.html'"><li type="none"><a href="./detailstest.html" disabled>continue with purchase</a></li></button>
+  
+      
+      </div>
+      
+    </div>
+    
+  
+
+<script src="./tickettest.js"></script>
+</body>
+</html>

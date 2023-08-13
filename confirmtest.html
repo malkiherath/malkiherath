@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./detailstest.css">
+
+</head>
+<body id="conbody">
+    <div class="cover">
+        <h1>buy tickets</h1>
+    </div>
+    
+    <h2>confirmation</h2>
+
+    
+    <p>thank you for your order.ypur order has been confirmed with us.you can show this confirmation at the entrance</p>
+    <p>following is the summery of your order</p>
+
+
+    <div class="section">
+          
+        <!-- tickets table and total paypal section -->
+        <table id="profileData" border="1">
+            <!-- Display user data here -->
+            <tr>
+                
+                <th>Date</th>
+                <th>Time</th>
+                
+                <th>Duration</th>
+                <th>Guests</th>
+                <th>Number of Tickets</th>
+                <th>Tickets Value</th>
+            </tr>
+            <tbody id="tickets-table">
+                <!-- Dynamically updated rows -->
+            </tbody>
+            
+           </table>
+          
+   
+</div>
+
+
+    <script >
+        var userData = JSON.parse(localStorage.getItem("form"));
+        if (userData) {
+            var profileDataElement = document.getElementById("profileData");
+            
+            profileDataElement.innerHTML+=
+                `<tr>
+                    <td rowspan="6">${userData.date}</td>
+                    <td rowspan="6">${userData.selectedOptions}</td>
+                    <td rowspan="6">${userData.duration}</td>
+                    <td>${userData.ticketData[0][0]}</td>
+                    <td>${userData.ticketData[0][1]}</td>
+                    <td rowspan="6">(${userData.total})</td>
+                </tr>
+                <tr>
+                    
+                    <td>${userData.ticketData[1][0]}</td>
+                    <td>${userData.ticketData[1][1]}</td>
+                </tr>
+                <tr>
+                    
+                    <td>${userData.ticketData[2][0]}</td>
+                    <td>${userData.ticketData[2][1]}</td>
+                    
+                </tr>
+                <tr>
+                    
+                    <td>${userData.ticketData[3][0]}</td>
+                    <td>${userData.ticketData[3][1]}</td>
+                    
+                </tr>
+                <tr>
+                
+                    <td>${userData.ticketData[4][0]}</td>
+                    <td>${userData.ticketData[4][1]}</td>
+                    
+                </tr>
+                `;
+    
+        } else {
+            profileDataElement.innerHTML = "No user data found.";
+        }
+    </script>
+</body>
+</html>
